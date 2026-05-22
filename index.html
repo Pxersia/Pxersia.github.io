@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum - Tu Nombre</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Contenedor principal con imágenes decorativas -->
+    <div class="page-frame">
+
+        <!-- Adornos decorativos internos -->
+        <div class="decor decor-left" aria-hidden="true"></div>
+        <div class="decor decor-right" aria-hidden="true"></div>
+        <div class="decor decor-top" aria-hidden="true"></div>
+        <div class="decor decor-bottom" aria-hidden="true"></div>
+
+        <div class="content-shell">
+            <!-- Encabezado con foto y descripción -->
+            <header>
+                <div class="profile">
+                    <img src="https://scontent.fscl12-1.fna.fbcdn.net/v/t39.30808-6/480492413_122098655618773069_8895039387188649236_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeGLjdhl4qZV3wXUrXhT1N5SP5lSejLfeBU_mVJ6Mt94FdHUPTiVB2R8Hc721VyuwOg3PKmPep_rMtwZIbtsIYUC&_nc_ohc=CcQBmTaEyd8Q7kNvwE7-5ed&_nc_oc=AdrodPV1CcbeViqKNltLGoHAaSIMUp2mUOfl2foAo896DnpdAmuvNy6C_3daAicDzgEfcb533SpuToScR0T7tIhJ&_nc_zt=23&_nc_ht=scontent.fscl12-1.fna&_nc_gid=_g6TzW_tT9LQpCv3MvmEHw&_nc_ss=7b2a8&oh=00_Af7DAD22u7MuWeqLKRqFIXl73MmKiWt2EsV9Wb0h814BrQ&oe=6A1684E0" alt="Foto de perfil">
+                    <div>
+                        <h1>Tu Nombre Completo</h1>
+                        <p>Tu profesión o especialidad</p>
+                        <p>Breve descripción sobre ti, tus habilidades y experiencia.</p>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Sección de enlaces a redes -->
+            <section class="social">
+                <div class="social-slot social-slot-left" aria-hidden="true">
+                    <img src="https://images.steamusercontent.com/ugc/16962962552826757821/4EB3B6C952185FA84522D741B89CB5FDB3F509EC/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false" alt="Decoración izquierda">
+                </div>
+                <div class="social-card">
+                    <h2>Mis Redes</h2>
+                    <div class="icons">
+                        <a href="https://github.com/Pxersia" target="_blank">
+                            <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub">
+                        </a>
+                        <a href="https://www.linkedin.com/in/benjamincontrerasgo/" target="_blank">
+                            <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
+                        </a>
+                        <a href="https://www.instagram.com/bxnjae._/" target="_blank">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+                        </a>
+                    </div>
+                </div>
+                <div class="social-slot social-slot-right" aria-hidden="true">
+                    <img src="https://images.steamusercontent.com/ugc/9985448356119155464/9C4309E63814BD5038F8F1CF84BC7BC1BA86FDA7/?imw=2048&imh=1152&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true" alt="Decoración derecha">
+                </div>
+            </section>
+
+            <!-- Sección de experiencia -->
+            <section class="about">
+                <h2>¿Quién soy?</h2>
+                <p>
+                    Soy un técnico en telecomunicaciones con experiencia en la instalación y mantenimiento de sistemas de comunicación.
+                    Mi pasión por la tecnología me ha llevado a trabajar en diversos proyectos, donde he desarrollado habilidades en redes,
+                    sistemas de comunicación y soluciones tecnológicas.
+                </p>
+                <p>
+                    También estudio y elaboro por cuenta propia proyectos relacionados con la programación en lenguajes como Python,
+                    JavaScript y HTML/CSS con el fin de ampliar mis conocimientos y habilidades en el ámbito tecnológico.
+                </p>
+                <p>
+                    Cuento con experiencia en SQL Server, lo que me ha permitido gestionar bases de datos de manera eficiente y desarrollar
+                    soluciones de almacenamiento de datos para diversos proyectos.
+                </p>
+            </section>
+
+            <!-- Sección de contacto -->
+            <section class="contact-section">
+                <h2>Contacto</h2>
+                <form action="guardar.php" method="POST">
+                    <input type="text" name="nombre" placeholder="Tu nombre" required>
+                    <input type="email" name="email" placeholder="Tu correo" required>
+                    <textarea name="mensaje" rows="4" placeholder="Tu mensaje..." required></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+            </section>
+
+            <footer>
+                <p>© 2026 Benjamín Hamilton Contreras Gómez - Todos los derechos reservados.</p>
+            </footer>
+        </div>
+
+    </div>
+</body>
+</html>
