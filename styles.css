@@ -150,16 +150,41 @@ section {
     padding: 40px;
 }
 
-.SobreMi {
+.SobreMi,
+.experiencia-laboral {
     max-width: 800px;
     margin: 0 auto;
     text-align: center;
 }
 
-.SobreMi p {
+.SobreMi p,
+.experiencia-laboral p,
+.experiencia-laboral li {
     text-align: justify;
     text-wrap: pretty;
     line-height: 1.6;
+}
+
+.experiencia-laboral .experience-item {
+    margin-top: 20px;
+    background: rgba(255, 255, 255, 0.96);
+}
+
+.experiencia-laboral ul {
+    max-width: 700px;
+    margin: 0 auto;
+    padding-left: 1.2rem;
+}
+
+@media (max-width: 768px) {
+    .experiencia-laboral .experience-item {
+        margin-top: 0;
+    }
+
+    .experiencia-laboral p,
+    .experiencia-laboral li {
+        text-align: left;
+    }
 }
 
 .contact-section {
