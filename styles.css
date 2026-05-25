@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -249,3 +250,231 @@ footer {
     }
 }
 
+=======
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(180deg, #9fd8ff 0%, #7ec9ff 100%);
+}
+
+.page-frame {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 28px;
+    border: 4px solid #000;
+    border-radius: 15px;
+    background: #fff;
+    overflow: visible;
+}
+
+.content-shell {
+    position: relative;
+    z-index: 1;
+}
+
+.decor {
+    position: absolute;
+    z-index: 0;
+    opacity: 0.9;
+    pointer-events: none;
+    filter: drop-shadow(0 10px 18px rgba(96, 73, 168, 0.22));
+}
+
+.decor-left,
+.decor-right {
+    width: clamp(70px, 7vw, 96px);
+    aspect-ratio: 1;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.decor-left {
+    left: 12px;
+    background: radial-gradient(circle at 30% 30%, #ffdff7 0%, #e9beff 42%, #9d7df5 100%);
+    border-radius: 42% 58% 48% 52% / 48% 44% 56% 52%;
+}
+
+.decor-right {
+    right: 12px;
+    background: radial-gradient(circle at 30% 30%, #fef1ff 0%, #d8caff 40%, #8d7efc 100%);
+    border-radius: 58% 42% 52% 48% / 44% 56% 48% 52%;
+}
+
+.decor-top,
+.decor-bottom {
+    left: 50%;
+    width: clamp(180px, 24vw, 250px);
+    height: clamp(66px, 8vw, 88px);
+    transform: translateX(-50%);
+}
+
+.decor-top {
+    top: 12px;
+    background: linear-gradient(135deg, #ffdafe 0%, #c8b3ff 50%, #8a70ff 100%);
+    border-radius: 999px;
+}
+
+.decor-bottom {
+    bottom: 12px;
+    background: linear-gradient(135deg, #e8dfff 0%, #c7b8ff 50%, #8f81f5 100%);
+    border-radius: 999px;
+}
+
+header {
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+                url("https://media1.tenor.com/m/kO1dUkE29G8AAAAC/frieren-blue-moon-weeds.gif") no-repeat center center;
+    background-size: cover;
+    position: relative;
+    border-radius: 10px;
+}
+
+header .profile {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.profile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+}
+
+.social {
+    padding: 30px 10px;
+}
+
+.social-card {
+    text-align: center;
+    padding: 30px 24px;
+    border-radius: 18px;
+    background: rgba(245, 243, 255, 0.88);
+    box-shadow: 0 8px 24px rgba(90, 67, 154, 0.12);
+}
+
+.social-slot {
+    width: 100%;
+    min-height: 180px;
+    border-radius: 18px;
+    border: 2px solid rgba(122, 110, 242, 0.3);
+    background: rgba(122, 110, 242, 0.06);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 8px;
+}
+
+.social-slot img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 18px;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 15px;
+}
+
+.icons img {
+    width: 70px;
+    height: 70px;
+    transition: transform 0.3s;
+}
+
+.icons img:hover {
+    transform: scale(1.2);
+}
+
+section {
+    padding: 40px;
+}
+
+.SobreMi {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.SobreMi p {
+    text-align: justify;
+    text-wrap: pretty;
+    line-height: 1.6;
+}
+
+.contact-section {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact-section form {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+form button {
+    background: #007bff;
+    border: none;
+    padding: 10px 20px;
+    color: #fff;
+    cursor: pointer;
+}
+
+footer {
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .page-frame {
+        padding: 12px;
+    }
+
+    .profile img {
+        margin-bottom: 15px;
+    }
+
+    .social {
+        padding: 16px 0;
+    }
+
+    .social-card {
+        padding: 20px;
+    }
+
+    .social-slot {
+        min-height: 120px;
+    }
+
+    .icons {
+        gap: 24px;
+    }
+
+    .icons img {
+        width: 56px;
+        height: 56px;
+    }
+
+    section {
+        padding: 24px 12px;
+    }
+}
+
+>>>>>>> 869ca7f8502df815ae3b2688177f612c0e9f1744
