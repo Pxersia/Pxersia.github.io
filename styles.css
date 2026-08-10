@@ -100,6 +100,22 @@ header .profile {
     padding: 30px 10px;
 }
 
+.social .row {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.social .col-3 {
+    flex: 0 1 auto;
+    min-width: 0;
+}
+
+.social .col-6 {
+    flex: 1 1 auto;
+}
+
 .social-card {
     text-align: center;
     padding: 30px 24px;
@@ -109,8 +125,8 @@ header .profile {
 }
 
 .social-slot {
-    width: min(100%, 220px);
-    max-width: 220px;
+    width: 100%;
+    max-width: 200px;
     aspect-ratio: 4 / 5;
     border-radius: 18px;
     border: 2px solid rgba(122, 110, 242, 0.3);
@@ -211,23 +227,25 @@ footer {
         padding: 16px 0;
     }
 
+    .social .row {
+        gap: 8px;
+    }
+
     .social-card {
-        padding: 20px;
+        padding: 15px;
     }
 
     .social-slot {
-        width: min(100%, 120px);
-        max-width: 120px;
-        aspect-ratio: 4 / 5;
+        max-width: 100px;
     }
 
     .icons {
-        gap: 24px;
+        gap: 12px;
     }
 
     .icons img {
-        width: 56px;
-        height: 56px;
+        width: 40px;
+        height: 40px;
     }
 
     section {
