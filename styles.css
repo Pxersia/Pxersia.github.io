@@ -216,9 +216,9 @@ footer {
     }
 
     .social-slot {
-        width: min(100%, 280px);
-        max-width: 280px;
-        aspect-ratio: 4 / 3;
+        width: min(100%, 120px);
+        max-width: 120px;
+        aspect-ratio: 4 / 5;
     }
 
     .icons {
